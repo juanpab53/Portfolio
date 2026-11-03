@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juan Pablo Aparicio | Backend Developer</title>
+    <meta name="description" content="Personal portfolio of Juan Pablo Aparicio, Backend Developer.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #0D1117;
+            --color-secondary: #161B22;
+            --color-card: #1C2128;
+            --color-accent: #64FFDA;
+            --color-text-main: #F0F6FC;
+            --color-text-muted: #8B949E;
+            --color-border: #30363D;
+
+            --font-sans: "Inter", sans-serif;
+        }
+
+        html {
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        ::selection {
+            background: #64FFDA;
+            color: #0D1117;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="bg-primary text-text-main font-sans">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 z-50 w-full border-b border-border bg-primary/90 backdrop-blur-md">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+
+            <a href="#home" class="text-xl font-bold tracking-tight">
+                Juan Pablo Aparicio Rojas<span class="text-accent">.</span>
+            </a>
+
+            <!-- Desktop navigation -->
+            <div class="hidden items-center gap-8 text-sm md:flex">
+                <a href="#home" class="text-accent transition hover:text-white">Home</a>
+                <a href="#about" class="text-text-muted transition hover:text-accent">About</a>
+                <a href="#skills" class="text-text-muted transition hover:text-accent">Skills</a>
+                <a href="#projects" class="text-text-muted transition hover:text-accent">Projects</a>
+                <a href="#contact" class="text-text-muted transition hover:text-accent">Contact</a>
+
+                <a href="https://github.com/juanpab53" target="_blank" rel="noopener noreferrer"
+                    class="rounded-md border border-accent px-4 py-2 text-accent transition hover:bg-accent hover:text-primary">
+                    GitHub
+                </a>
+            </div>
+
+            <!-- Mobile navigation -->
+            <details class="relative md:hidden">
+                <summary class="cursor-pointer list-none text-2xl text-accent">
+                    ☰
+                </summary>
+                <div
+                    class="absolute right-0 top-12 flex w-48 flex-col gap-5 rounded-lg border border-border bg-secondary p-5 text-sm shadow-xl">
+                    <a href="#home" class="text-accent">Home</a>
+                    <a href="#about" class="text-text-muted hover:text-accent">About</a>
+                    <a href="#skills" class="text-text-muted hover:text-accent">Skills</a>
+                    <a href="#projects" class="text-text-muted hover:text-accent">Projects</a>
+                    <a href="#contact" class="text-text-muted hover:text-accent">Contact</a>
+                    <a href="https://github.com/juanpab53" target="_blank" rel="noopener noreferrer"
+                        class="text-accent">
+                        GitHub Profile ↗
+                    </a>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <main>
+    </main>
 </body>
 </html>
