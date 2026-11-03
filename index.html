@@ -1,54 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juan Pablo Aparicio | Backend Developer</title>
-    <meta name="description" content="Personal portfolio of Juan Pablo Aparicio, Backend Developer.">
+    <meta name="description" content="Personal portfolio of Juan Pablo Aparicio, Backend Developer." />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
 
     <style type="text/tailwindcss">
         @theme {
-            --color-primary: #0D1117;
-            --color-secondary: #161B22;
-            --color-card: #1C2128;
-            --color-accent: #64FFDA;
-            --color-text-main: #F0F6FC;
-            --color-text-muted: #8B949E;
-            --color-border: #30363D;
+        --color-primary: #0d1117;
+        --color-secondary: #161b22;
+        --color-card: #1c2128;
+        --color-accent: #64ffda;
+        --color-text-main: #f0f6fc;
+        --color-text-muted: #8b949e;
+        --color-border: #30363d;
 
-            --font-sans: "Inter", sans-serif;
-        }
+        --font-sans: "Inter", sans-serif;
+      }
 
-        html {
-            scroll-padding-top: 90px;
-        }
+      html {
+        scroll-padding-top: 90px;
+      }
 
-        body {
-            font-family: "Inter", sans-serif;
-        }
+      body {
+        font-family: "Inter", sans-serif;
+      }
 
-        ::selection {
-            background: #64FFDA;
-            color: #0D1117;
-        }
+      ::selection {
+        background: #64ffda;
+        color: #0d1117;
+      }
     </style>
 </head>
 
 <body class="bg-primary text-text-main font-sans">
-
     <!-- NAVBAR -->
     <header class="fixed top-0 z-50 w-full border-b border-border bg-primary/90 backdrop-blur-md">
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-
             <a href="#home" class="text-xl font-bold tracking-tight">
                 Juan Pablo Aparicio Rojas<span class="text-accent">.</span>
             </a>
@@ -88,6 +87,88 @@
         </nav>
     </header>
     <main>
+        <!-- HERO -->
+        <section id="home" class="mx-auto flex min-h-screen max-w-7xl items-center px-6 py-32">
+            <div class="grid w-full items-center gap-16 lg:grid-cols-2">
+                <div>
+                    <h1 class="mb-4 text-5xl font-bold leading-tight sm:text-5xl ld:text-6xl">Juan Pablo
+                        <span class="block text-accent">Aparicio.</span>
+                    </h1>
+                    <h2 class="mb-6 text-2xl font-semibold text-text-muted sm:text-3xl">Backend Developer</h2>
+                    <p class="mb-8 max-w-xl leading-loose text-text-muted">I build backend applications and APIs,
+                        focusing on software development, database management, and contiuosly improving my
+                        technical skills.
+                    </p>
+                    <div class="mb-8 flex flex-wrap gap-4">
+                        <a href="#projects"
+                            class="rounded-md bg-accent px-6 py-3 font-semibold text-primary transition hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/20">
+                            Explore My Projects →
+                        </a>
+                        <a href="https://github.com/juanpab53" target="_blank"
+                            class="rounded-md border border-accent px-6 py-3 font-bold text-accent transition hover:bg-accent hover:text-primary">
+                            GitHub Profile
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3 text-sm text-text-muted">
+                        <span class="h-2 w-2 rounded-full bg-accent"></span>
+                        Acedemic Projects & Continuous Learning
+                    </div>
+                </div>
+                <!-- CODE CARD -->
+                <div class="rounded-lg border border-border bg-secondary shadow-2xl shadow-black">
+                    <div class="flex items-center gap-2 border-b border-border px-5 py-4">
+                        <span class="h-3 w-3 rounded-full bg-red-400"></span>
+                        <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
+                        <span class="h-3 w-3 rounded-full bg-green-400"></span>
+                        <span class="ml-3 font-mono text-xs text-text-muted">
+                            developer.js
+                        </span>
+                    </div>
+                    <div class="overflow-x-auto p-6 font-mono text-sm leading-8 sm:p-8">
+                        <p>
+                            <span class="text-purple-400">const</span>
+                            <span class="text-accent">developer</span> = {
+                        </p>
+                        <p class="pl-5">
+                            name: <span class="text-green-300">'Juan Pablo Aparicio'</span>,
+                        </p>
+                        <p class="pl-5">
+                            role: <span class="text-green-300">'Backend Developer'</span>,
+                        </p>
+
+                        <p class="pl-5">
+                            focus:
+                            <span class="text-green-300">'Software Engineering'</span>,
+                        </p>
+                        <p class="pl-5">skills: [</p>
+
+                        <p class="pl-10 text-green-300">'Node.js', 'Java',</p>
+                        <p class="pl-10 text-green-300">'Spring Boot', 'NestJS',</p>
+                        <p class="pl-10 text-green-300">'PostgreSQL', 'Docker'</p>
+
+                        <p class="pl-5">],</p>
+
+                        <p class="pl-5">
+                            learning: <span class="text-orange-300">true</span>,
+                        </p>
+
+                        <p class="pl-5">
+                            build: <span class="text-purple-400">()</span>
+                            <span class="text-purple-400">=></span> {
+                        </p>
+
+                        <p class="pl-10">
+                            <span class="text-purple-400">return</span>
+                            <span class="text-green-300">'Building and improving'</span>;
+                        </p>
+
+                        <p class="pl-5">}</p>
+                        <p>};</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
